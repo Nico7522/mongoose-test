@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
+const { URL, LOCAL_URL } = process.env
+
 
 const db = {
   start: async () => {
     try {
       await mongoose.connect(
-        "mongodb://127.0.0.1:27017/threadsDB"
-        // "mongodb+srv://nicolas:nico@nicolas.yw93vvh.mongodb.net/threadsDB"
+        LOCAL_URL
+        // "URL"
       );
 
     } catch (error) {

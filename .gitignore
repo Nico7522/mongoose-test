@@ -1,3 +1,5 @@
 #DATA
-
 utils
+images
+#ENV
+.env
